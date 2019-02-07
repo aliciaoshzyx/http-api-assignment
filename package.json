@@ -4,7 +4,9 @@
   "description": "",
   "main": "./src/server.js",
   "scripts": {
-    "test": "npm test"
+    "start":"node ./src/server.js",
+    "pretest":"eslint ./src --fix",
+    "test": "echo \"Tests Complete\" && exit 1"
   },
   "author": "Alicia Pankratz",
   "license": "ISC",
