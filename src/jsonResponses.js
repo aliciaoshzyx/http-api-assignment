@@ -131,7 +131,7 @@ const forbidden = (request, response, acceptedTypes) => {
 
   // default to JSON
   const responseString = JSON.stringify(responseText);
-  // send our json with a success status code
+  // send json
   return respond(request, response, 403, responseString, 'application/json');
 };
 
@@ -154,7 +154,7 @@ const internal = (request, response, acceptedTypes) => {
 
   // default to JSON
   const responseString = JSON.stringify(responseText);
-  // send our json with a success status code
+  // send json
   return respond(request, response, 500, responseString, 'application/json');
 };
 
@@ -177,7 +177,7 @@ const notImplemented = (request, response, acceptedTypes) => {
 
   // default to JSON
   const responseString = JSON.stringify(responseText);
-  // send our json with a success status code
+  // send jsson
   return respond(request, response, 501, responseString, 'application/json');
 };
 
@@ -198,13 +198,11 @@ const notFound = (request, response, acceptedTypes) => {
     return respond(request, response, 404, responseXML, 'text/xml');
   }
   const responseString = JSON.stringify(responseText);
-  // return our json with a 404 not found error code
+  // return json
   return respond(request, response, 404, responseString, 'application/json');
 };
 
-// exports to set functions to public.
-// In this syntax, you can do getIndex:getIndex, but if they
-// are the same name, you can short handle to just getIndex,
+// export
 module.exports = {
   success,
   badRequest,

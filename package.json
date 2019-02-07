@@ -1,6 +1,10 @@
 {
   "name": "apoassignment1",
   "version": "1.0.0",
+  "engines" :{
+    "node" : "8.10.0",
+    "npm" : "6.4.0"
+  },
   "description": "",
   "main": "./src/server.js",
   "scripts": {

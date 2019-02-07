@@ -67,11 +67,13 @@
       return false;
     };
     const init = () => {
+
+      //for display
       const h1 = document.createElement('h1');
       const p = document.createElement('p');
       content.appendChild(h1);
       content.appendChild(p);
-      //grab form
+      //grab selects and button
       const sendButton = document.querySelector('#send');
       const pageSelect = document.querySelector('#page');
       const typeSelect = document.querySelector('#type');
