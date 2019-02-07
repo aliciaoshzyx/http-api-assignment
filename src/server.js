@@ -43,4 +43,4 @@ const onRequest = (request, response) => {
 
 http.createServer(onRequest).listen(port);
 
-console.log(`Listening on 127.0.0.1: ${port}`);
+//console.log(`Listening on 127.0.0.1: ${port}`);
